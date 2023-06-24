@@ -37,7 +37,11 @@
 				architecto consequuntur.
 			</p>
 			<h2 class="text-center mt-2 mb-4">Open Position</h2>
-			<p>TODO - show the jons here</p>
+			<div>
+				{% for job in jobs %}
+				   {% include 'jobitem.html' %}
+				{% endfor %}
+			</div>
 			<div class="text-center">
 				<button type="button" class="btn btn-primary">Contact Us</button>
 				<p class="mt-4">Copyright 2023, Hitanshu</p>
